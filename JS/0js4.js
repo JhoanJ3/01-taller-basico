@@ -1,10 +1,25 @@
+// Escribe un programa que le pida al usuario ingresar un número.
 
-function sumar( numero1, numero2 ) {
-     numero1 = parseFloat (prompt ("Digita digita numero 1"));
-     numero2 = parseFloat (prompt ("Digita digita numero 2"));
+// Si el número es múltiplo de 3 debe imprimir en la consola bing.
+// Si el número es múltiplo de 5 debe imprimir en la consola bong.
+// Si el número es múltiplo tanto de 3 como de 5 debe imprimir en la consola bingbong.
+// Si no cumple ninguna de las condiciones anteriores debe imprimir el mismo número.
 
-     let suma = numero1 + numero2
-     console.log (suma)
-    
+
+function multiplo5( ) {
+     
+     let numero = parseInt(prompt("Ingrese un numero por favor:"));
+     if ( numero > 0 && numero % 5 === 0 && numero % 3 === 0 ) { 
+          console.log( `${numero} bingbong` )
+     } 
+     else if (numero > 0 && numero % 3 === 0) {
+          console.log ( `${numero} bing` )
+     }
+     else if (numero > 0 && numero % 5 === 0) {
+          console.log ( `${numero} bong` )
+     }
+     else{
+          alert("No, el número "+numero+ " no es múltiplo de 5");
+     }
 }
-sumar()
+multiplo5()
