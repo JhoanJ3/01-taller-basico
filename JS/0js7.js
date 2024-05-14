@@ -7,3 +7,5 @@ let numeroF = parseInt (prompt("Ingrese un #"));
     for ( let i = numeroI; i <= numeroF; i++ ) {
         console.log( i );
     }  
+
+    
