@@ -6,20 +6,20 @@
 // Si no cumple ninguna de las condiciones anteriores debe imprimir el mismo número.
 
 
-function multiplo5( ) {
+function multiplos( ) {
      
      let numero = parseInt(prompt("Ingrese un numero por favor:"));
      if ( numero > 0 && numero % 5 === 0 && numero % 3 === 0 ) { 
-          console.log( `${numero} bingbong` )
+          alert( `${numero} bingbong` )
      } 
      else if (numero > 0 && numero % 3 === 0) {
-          console.log ( `${numero} bing` )
+          alert ( `${numero} bing` )
      }
      else if (numero > 0 && numero % 5 === 0) {
-          console.log ( `${numero} bong` )
+          alert ( `${numero} bong` )
      }
      else{
           alert("No, el número "+numero+ " no es múltiplo de 5");
      }
 }
-multiplo5()
+multiplos()

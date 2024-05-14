@@ -10,7 +10,8 @@ function multiplo5( ) {
 
      if ( numero > 0 && numero % 5 == 0 ) { //hacemos la comparación
          alert("Si, el número "+numero+ " es múltiplo de 5"  )
-     }else{
+     }
+     else{
        alert("No, el número "+numero+ " no es múltiplo de 5");
 
       }
