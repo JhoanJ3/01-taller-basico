@@ -1,30 +1,20 @@
-// Crea un programa a partir de las siguientes instrucciones:
+// Completa el siguiente programa e imprime la cantidad de unos (1) que haya en el arreglo:
 
-// Crea una variable llamada nombres con un arreglo que tenga los siguientes elementos: "Pedro", "Pablo", "María", "Juan", "Diana".
-// Pídele al usuario que ingrese un nombre e insértalo al final del arreglo que creaste en el paso 1.
-// Pídele al usuario que ingrese otro nombre y reemplaza la tercera posición del arreglo con este valor.
-// Recorre el arreglo e imprímelo.
-// Un ejemplo de cómo se comportaría el programa en la consola sería el siguiente:
-//     Ingresa un nombre > Camilo
-//     Ingresa otro nombre > Ariel
-//     Pedro
-//     Pablo
-//     Ariel
-//     Juan
-//     Diana
-//     Camilo
+// const nums = [ 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1 ];
 
-let nombres = ["Pedro", "Pablo", "María", "Juan", "Diana"]
-let nombreI = prompt("Ingrese un nombre"); 
+// El resultado debería ser el siguiente:
 
-nombres.push ( nombreI );
+// 11
+// NOTA: este ejercicio lo debes hacer con ciclos y sin ayuda de la función filter de JavaScript. Al terminarlo, cambia el arreglo original para verificar que funcione con otras combinaciones de ceros y unos.
 
-nombreI = prompt("Ingrese un nombre a remplazar");
+const nums = [ 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1 ,1];
+let cantUnos= 0;
 
-nombres [ 2 ] = nombreI
-
-nombres.forEach (function (nombreI) {
-    console.log(nombreI)
-});
-
+for(let numero of nums){
+    if(numero == 1){
+        //  console.log(numero)
+        cantUnos++
+    }
+}
+console.log(cantUnos);
     
